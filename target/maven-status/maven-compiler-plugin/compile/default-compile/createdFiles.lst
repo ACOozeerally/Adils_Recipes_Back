@@ -1,0 +1,7 @@
+com/ACO/AdilsRecipes/Util/JSONUtil.class
+com/ACO/AdilsRecipes/repository/RecipesRepository.class
+com/ACO/AdilsRecipes/domain/Ratings.class
+com/ACO/AdilsRecipes/rest/RecipesEndpoint.class
+com/ACO/AdilsRecipes/repository/RecipesDBRepository.class
+com/ACO/AdilsRecipes/rest/JAXActivator.class
+com/ACO/AdilsRecipes/domain/Recipes.class
