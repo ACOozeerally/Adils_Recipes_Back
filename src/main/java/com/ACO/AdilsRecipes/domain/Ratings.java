@@ -9,8 +9,8 @@ import javax.persistence.Id;
 @Entity
 public class Ratings {
 
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long ratingID;
 	@Column
 	private String comment;

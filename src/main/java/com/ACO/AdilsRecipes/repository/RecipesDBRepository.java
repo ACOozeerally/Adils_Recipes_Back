@@ -94,4 +94,11 @@ public class RecipesDBRepository implements RecipesRepository {
 		return manager.find(Ratings.class, id);
 	}
 
+	@Override
+	public String getRecipeRating(Long recipeID) {
+		Query query = manager.createQuery("Select a FROM Ratings a where a.recipeID = " + recipeID);
+		Collection<Ratings> ratings = (Collection<Ratings>) query.getResultList();
+		return util.getJSONForObject(ratings);
+	}
+
 }

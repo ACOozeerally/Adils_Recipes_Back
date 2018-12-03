@@ -6,19 +6,21 @@ public interface RecipesRepository {
 	
 	String getAllRecipes();
 
-	String createRecipe(String classroom);
+	String createRecipe(String recipe);
 
-	String deleteRecipe(Long classroomID);
+	String deleteRecipe(Long recipeID);
 
-	String getRecipe(Long classroomID);
+	String getRecipe(Long recipeID);
 
-	String updateRecipe(Long id, String classroom);
+	String updateRecipe(Long id, String recipe);
 	
 	String getRating(Long ratingID);
 	
 	String createRating(String rating);
 	
-	String deleteRating(Long id);
+	String deleteRating(Long ratingID);
+	
+	String getRecipeRating(Long recipeID);
 	
 	
 

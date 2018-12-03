@@ -66,6 +66,13 @@ public class RecipesEndpoint {
 		return recipesRepo.getRating(ratingID);
 	}
 	
+	@Path("/getRecipeRatings/{id}")
+	@GET
+	@Produces({ "application/json" })
+	public String getRecipeRating(@PathParam("id") Long recipeID) {
+		return recipesRepo.getRecipeRating(recipeID);
+	}
+	
 	@Path("/createRating")
 	@POST
 	@Produces({ "application/json" })
@@ -77,7 +84,7 @@ public class RecipesEndpoint {
 	@DELETE
 	@Produces({ "application/json" })
 	public String deleteRating(@PathParam("id") Long ratingID) {
-		return recipesRepo.deleteRecipe(ratingID);
+		return recipesRepo.deleteRating(ratingID);
 	}
 
 }
